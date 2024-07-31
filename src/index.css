@@ -1,13 +1,107 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.text-decoration-none {
+  text-decoration: none;
+  color: rgb(119, 119, 119);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mr-10 {
+  margin-right: 10px;
+}
+
+.active {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+  color: rgb(119, 119, 119);
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.active {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-container{
+  margin: 50px 300px ;
+  border: 1px solid black;
+  width: 50%;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.wrap {
+  white-space: nowrap;
+}
+
+table{
+  margin-left: -50px;
+}
+
+td {
+  cursor: pointer;
+}
+
+thead{
+  text-align: center;
+}
+
+
+@media only screen and (max-width:720px) {
+  .form-container{
+    margin-left: 10px;
+    width:93%;
+  }
+
+  .table{
+    margin-left: 1px;
+  }
+
+  .table thead {
+    display: none;
+  }
+  .table, .table tbody, .table tr, .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 15px;
+  }
+  .table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+  min-width: 1000px; /* Ensure the table is wide enough */
+}
+
+.table td, .table th {
+  white-space: nowrap; /* Prevent text from wrapping within the cells */
 }
